@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Quote Generator</title>
+    <link rel="stylesheet" href="in style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood-Based Quote Generator</h1>
+        <div class="mood-select">
+            <label for="mood">Select your mood:</label>
+            <select id="mood" onchange="generateQuote()">
+                <option value="">Select a mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="inspired">Inspired</option>
+                <option value="motivated">Motivated</option>
+            </select>
+        </div>
+        <div class="quote-container">
+            <p id="quote"></p>
+            <button onclick="generateQuote()">Generate Quote</button>
+        </div>
+    </div>
+
+    <script src="in script.js"></script>
+</body>
+</html>
